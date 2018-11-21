@@ -3,7 +3,7 @@ package com.service.impl;
 import java.util.List;
 
 import com.constant.RedisConst;
-import com.mapper.UserMapper;
+import com.dao.UserDao;
 import com.model.User;
 import com.service.UserService;
 import com.utils.redis.CacheForKeyExpire;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserMapper userMapper;
+    private UserDao userDao;
 
 
     @Override
@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
         CacheForKeyExpire cache = CacheUtils.getCacheForKeyExpire();
         List<User> list = cache.getKeyExpireList("AllUser",User.class);
         if(CollectionUtils.isEmpty(list)){
-            list = userMapper.findAll();
+            list = userDao.findAll();
             cache.addKeyExpireList("AllUser",list, RedisConst.ExpireTime.HALF_HOUT);
         }
         return list;
@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService {
     public User getById(String id) {
         User user = this.getUserCacheById(id);
         if(user == null){
-            user = userMapper.getById(id);
+            user = userDao.getById(id);
             addUserCache(user,id);
         }
         return user;
@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void register(User user) {
-        userMapper.save(user);
+        userDao.save(user);
         this.addUserCache(user,user.getId());
     }
 

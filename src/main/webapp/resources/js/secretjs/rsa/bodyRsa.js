@@ -12,8 +12,6 @@ function encrypt(string) {
 
 /*解密*/
 function decrypt(string) {
-    //密文
-    var ttt="..........................";
     //设置解密私钥
     encrypt.setPrivateKey(".......")
     //分段解密
