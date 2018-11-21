@@ -1,0 +1,126 @@
+body{
+    font-family: Microsoft YaHei;
+    margin: -22px auto;
+}
+/*这里写宽度大于321px小于1024px的样式(一般是平板电脑)*/
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .background{
+        width: 100%;
+        height: calc(100vw * 3.5);
+        background-position: center 0px;
+        background-size: cover;
+    }
+}
+
+/* 这里写pc客户端的样式*/
+@media only screen and (min-width: 1029px){
+    .background{
+        width: 100%;
+        height: calc(100vw * 2.6);
+        background-position: center 0px;
+    }
+}
+
+input{
+    border:0px;
+    background:transparent;
+    margin-left: 22px;
+    outline:none;
+    font-size: 18px;
+}
+.head_content{
+    position: relative;
+    width: 337px;
+    height: 276px;
+    margin:0 auto;
+    top: 15.8%;
+}
+.row{
+    border-radius:10px ;
+    border:1px solid #AAAAAA;
+    width: 276px;
+    height: 42px;
+    margin-left: 27px;
+    line-height: 42px;
+    margin-top: 4px;
+}
+.get_sms_btn{
+    color: #E36902;
+    width: 108px;
+    height: 42px;
+    border:1px solid #AAAAAA;
+    text-align: center;
+    border-radius:10px ;
+    line-height: 42px;
+    background-image: linear-gradient( #EEEEEE, #E7E7E7,#F7F7F7);
+    float: left;
+    position: absolute;
+    left: 195px;
+    top:48px;
+}
+.border{
+    border-radius: 5px;
+}
+#register{
+    text-align: center;
+    background-size: 100%;
+    width:292px;
+    height:55px;
+    color: white;
+    font-size: 17px;
+    line-height: 55px;
+    margin-left: 18px;
+    margin-top: 1px;
+}
+.title{margin-top: 22px; margin-left: 100px;}
+.checkbox { position: relative;left: 195px;margin-top: -1px;width: 108px;}
+.checkbox input[type='checkbox'] { position: absolute; left: -8px; top: -2px; width: 14px; height: 14px; opacity: 0; }
+.checkbox label { position: absolute; left: 30px; top: 0; height: 14px; line-height: 14px; font-size: small}
+.checkbox label:before { content: ''; position: absolute; left: -20px; top: 0; width: 14px; height: 14px; border: 1px solid #ddd; border-radius: 50%; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; }
+.checkbox label:after {opacity: 0; content: ''; position: absolute; left: -13.5px; top: 2.3px; width: 4.2px; height: 7.4px; border: 0; border-right: 1px solid #4B63CC; border-bottom: 1px solid #4B63CC; background: white; transform: rotate(61deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(61deg); -ms-transform: rotate(61deg); transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; }
+.checkbox input[type='checkbox']:checked + label:before { background: white; border-color: #AAAAAA; }
+.checkbox input[type='checkbox']:checked + label:after { opacity: 1;background: white; }
+
+input::-webkit-input-placeholder{color:grey;}
+
+.success_logo{
+    background-size: 100%;
+    width: 36px;
+    height: 36px;
+    margin: 22px auto;
+}
+.download_btn{
+    background-size: 100%;
+    width: 292px;
+    height: 55px;
+    margin: 11px auto;
+    line-height: 55px;
+    color: #784503;
+    font-size: 26px;
+}
+.text_1{
+    background-size: 100%;
+    width: 270px;
+    height: 14px;
+    margin: 7px auto;
+}
+.biankuang{
+    height: 272px;
+    position: relative;
+    top: -267px;
+    background: white;
+    z-index: -1;
+    border-radius: 9px;
+}
+.head_content_title{
+    background-size: 100%;
+    width: 179px;
+    height: 32px;
+    margin: auto;
+    position: relative;
+    top: 21px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+}
+.downloadContent{text-align: center; position: relative;top: 8px;}

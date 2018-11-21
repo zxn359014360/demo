@@ -1,6 +1,11 @@
 package com.controller;
 
+import com.constant.RedisConst;
 import com.model.User;
+import com.utils.redis.CacheForKeyExpire;
+import com.utils.redis.CacheUtils;
+import com.utils.redis.RedisCache;
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,5 +24,8 @@ public class UserController {
         List<User> list = userService.findAllUser();
         return list;
     }
+
+
+
 
 }

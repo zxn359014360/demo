@@ -5,19 +5,56 @@ import java.util.Date;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
-    private Integer id;
+    private String id;
     private String username;
+    private String phone;
+    private String password;
     private Date birthday;
     private String sex;
     private String address;
+    private String createTime;
+    private String updateTime;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 
     public String getUsername() {
         return username;

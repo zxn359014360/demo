@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* 你自己的样式 */
+.Hui-aside .menu_dropdown dd li .on, .Hui-aside .menu_dropdown dd li a:hover{
+    background: #5a98de;
+    color: #fff;
+}
+.echarts-type span {
+    font-size: 50px;
+    color: #f00;
+    vertical-align: middle;
+
+}
+.echarts-type span[type='1']{
+    font-size: 40px;
+}
+.row ul.portfolio-item li.item{
+    width:10%;
+    height: 10%;
+    float: left;
+    margin-left: 30px;
+}
+option{
+    border:0;
+}
+.pagination{
+	text-align: right;
+	margin-top: 20px;
+	list-style-type: none;
+}
+.pagination a {
+    text-decoration: none;
+	border: 1px solid #ccc;
+	color: #666;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 0.1em 0.4em;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	-moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+      user-select:none;
+}
+
+.pagination .active,.pagination a:hover{
+    background: #5a98de;
+    color: #fff;
+	border: 1px solid #AAE;
+}
+
+.pagination .current.prev, .pagination .current.next{
+	color:#999;
+	border-color:#999;
+	background:#fff;
+}
+.select-box:hover{
+    border: 1px solid #3bb4f2 !important;
+}
+.select{
+    margin: 0px;
+}
+.total{
+    line-height:20px;
+    margin-left: 20px;
+    color:#5a98de ;
+    font-size: 12px;
+}
+.total i{
+    font-style:normal;
+    color: red;
+    font-weight: normal;
+}
+.l-total{
+    width: 50px;
+    display: -webkit-inline-box;
+}
+.pageBox {
+    text-align: right;
+}
+.pageBox > div{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.formControls select{
+	padding:6px 0;
+}
+.detailsTable{
+	margin-top: 20px;
+}
+.detailsTable:first-child{
+	margin-top: 0;
+}
+.detailsTable img{
+	width: 100px;
+	margin-right: 10px;
+}
+.detailsTable td{
+	padding: 9px;
+	text-align: center;
+	border: 1px solid  #ccc;
+	white-space:nowrap;
+}
+.detailsTable td.text-left{
+	text-align: left;
+}
+
+.tableBox{
+	padding: 1px 0;
+	overflow: auto;
+}
+.tableBox td,.tableBox th{
+	white-space:nowrap;
+}
+.tableBox .wrap{
+	white-space: normal;
+}
+.tableBox .td-btn input{
+	margin: 5px 0;
+}
+.fans-popup{
+	animation-fill-mode:none !important;
+	-webkit-animation-fill-mode:none !important;
+}
+.fans-popup .layui-layer-content{
+	height: auto !important;
+	max-height: 520px !important;
+	padding: 20px;
+}
+.fans-popup .layui-layer-content .btg textarea{
+	width: 100%;
+	outline: none;
+	height: 100px;
+	resize: none;
+}
+.fans-popup .fans-popup-box > div{
+	margin-top: 10px;
+}
+.fans-popup .fans-popup-box > div:first-child{
+	margin-top: 0;
+}
+.rz{
+	margin-top: 20px;
+	text-align: center;
+}
+.rz input{
+	margin: 0 20px;
+}
+
+.ld{
+	padding-top:5px;
+	
+}
+.ld input{
+	margin-right: 5px;
+}
+.ld label{
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+label.error {
+	position: relative;
+	right: 0;
+	top: 0;
+	left: 10px;
+}
+.error{
+	text-align: center;
+	color: red;
+}
+
+.fontbg{
+	border: 1px solid #5eb95e;
+	background: none;
+	color: #333;
+	border-radius: 3px;
+	font-weight: normal;
+}
+
+.goto input.gotoPage{
+	border: 1px solid rgb(204, 204, 204);
+	width: 50px;
+	height: 25px;
+	margin-bottom: 4px;
+	text-align: center;
+}
+
+#aeRemark{
+	height: 100px;
+	resize: none;
+}
+
+.buContentDiv{
+	max-width: 100%;
+	height: 20px;
+	overflow: hidden;
+}
+.buContentDiv img{
+	display: none;
+}
+.viewContent img{
+	max-width: 100%;
+	width: auto !important;
+	height: auto !important;
+}
+
+.file-item{
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.file-item img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.file-item .remove{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: url(../../../temp/close.png) no-repeat rgba(0,0,0,0.5) center;
+	background-size: 50%;
+	cursor: pointer;
+	display: none;
+}
+.file-item:hover .remove{
+	display: block;
+}
+.webuploader-container{
+	width: 80px !important;
+	height: 30px !important;
+}
+.webuploader-container .webuploader-pick{
+	width: 100% !important;
+	height: 100% !important;
+	padding: 0 !important;
+	line-height: 30px;
+}
+.webuploader-pick + div{
+	width: 100% !important;
+	height: 100% !important;
+}
+.cpbox{
+	display: inline-block;
+}
+.combo-select{
+	display:inline-block;
+	margin-bottom: 0 !important;
+}
+.combo-select .combo-input{
+	padding: 7px !important;
+}
