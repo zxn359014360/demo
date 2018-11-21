@@ -26,7 +26,7 @@ public class SimpleFreeMarkerView extends AbstractTemplateView {
     /**
      * 部署路径调用名称
      */
-    public static final String CONTEXT_PATH = "base";
+    public static final String CONTEXT_PATH = "ctx";
 
     private Configuration configuration;
 
