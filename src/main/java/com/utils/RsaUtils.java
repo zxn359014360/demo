@@ -1,6 +1,5 @@
 package com.utils;
 
-import com.qqjx.pay.withdraw.wxpay.utils.Base64Utils;
 import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.Cipher;
