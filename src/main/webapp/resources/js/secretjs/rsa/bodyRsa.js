@@ -17,7 +17,7 @@ function decrypt(string) {
     //设置解密私钥
     encrypt.setPrivateKey(".......")
     //分段解密
-    var sss= encrypt.decryptLong2(sss);
+    return encrypt.decryptLong2(string);
 }
 
 function hexToBytes(hex) {
