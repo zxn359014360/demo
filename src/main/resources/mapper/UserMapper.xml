@@ -4,4 +4,14 @@
         <select id="findAll" resultType="user">
                 select * from user
         </select>
+
+        <insert id="save" parameterType="user">
+                INSERT INTO user(id,username,birthday,sex,address,phone,password,create_time,update_time)
+                values(#{id},#{username},#{birthday},#{sex},#{address},#{phone},#{password},#{createTime},#{updateTime})
+        </insert>
+
+        <select id="getById" resultType="user">
+                select * from user where id = #{id}
+        </select>
+
 </mapper>
