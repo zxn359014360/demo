@@ -24,10 +24,9 @@ public class RegisterController extends BaseController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    @RequestMapping(value = "/register")
     public ModelAndView register() {
-        ModelAndView mav = new ModelAndView();
-        mav.setViewName("/view/regist/register");
+        ModelAndView mav = new ModelAndView("register/register","phone","13123397020");
         return mav;
     }
 

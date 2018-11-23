@@ -20,7 +20,7 @@ public class FreeMarkerConfig {
         SimpleFreeMarkerViewResolver resolver = new SimpleFreeMarkerViewResolver();
         resolver.setCache(false);
         resolver.setViewClass(FreeMarkerView.class);
-        resolver.setContentType("text/html; charset=UTF-8");
+        resolver.setContentType("text/html;charset=UTF-8");
         resolver.setSuffix(".html");
         resolver.setExposeSpringMacroHelpers(true);
         resolver.setExposeRequestAttributes(false);
@@ -31,7 +31,7 @@ public class FreeMarkerConfig {
     @Bean
     public FreeMarkerConfigurer freemarkerConfig() throws IOException, TemplateException {
         FreeMarkerConfigurationFactory factory = new FreeMarkerConfigurationFactory();
-        factory.setTemplateLoaderPaths("/view");
+        factory.setTemplateLoaderPaths("classpath:/templates/");
         factory.setDefaultEncoding("UTF-8");
 
         FreeMarkerConfigurer result = new FreeMarkerConfigurer();
