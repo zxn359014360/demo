@@ -1,8 +1,10 @@
-package com.freemarker;
+package com.config;
 
+import com.freemarker.FreeMarkerView;
+import com.freemarker.SimpleFreeMarkerViewResolver;
 import freemarker.template.TemplateException;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.ui.freemarker.FreeMarkerConfigurationFactory;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
@@ -12,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-@Configuration
+@SpringBootConfiguration
 public class FreeMarkerConfig {
 
     @Bean
